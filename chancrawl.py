@@ -5,6 +5,7 @@ from datetime import datetime
 import json
 from HTMLParser import HTMLParser
 import htmlentitydefs
+from sys import argv
 
 class MLStripper(HTMLParser):
     def __init__(self):
@@ -20,7 +21,9 @@ def html_to_text(html):
     s.feed(html)
     return s.get_data()
 
-board = 'biz'
+#example, board = biz
+board = argv[1]
+
     
 url = 'http://a.4cdn.org/'+ board +'/catalog.json'
 
@@ -77,10 +80,12 @@ for i in range (len(contentList)):
         else:
             print space + 'Reply #' + str(j) + space +(comment)
 
-# Current bugs:
-#1) If theres more than one quote it doesn't get the reply. 
-#^ loop through list of </a> values to get all the reply 
-#2) Doesn't delete tripcodes
- #3) if you direct to a different thread, it messes up and places that as part of the reply.
-#4) treat <br> as breaks---Check
-#5) FORMAT INTO FUNCTIONS
+'''
+Current bugs:
+1) If theres more than one quote it doesn't get the reply. 
+^ loop through list of </a> values to get all the reply 
+2) Doesn't delete tripcodes
+3) if you direct to a different thread, it messes up and places that as part of the reply.
+4) treat <br> as breaks---Check
+5) Format
+'''
