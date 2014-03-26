@@ -1,9 +1,9 @@
 4chanalytics 
 ==========
 ##Background 
-www.4chan.org provides an incredible wealth of information on internet culture and the evolution of internet language. It also provides statistcal information on many trending topics across the various boards.
+www.4chan.org provides an incredible wealth of information on internet culture and the increasing difficulties NLP faces with contextual communication. This script can be used to provide statistcal information on many trending topics across the various boards.
 This is a simple JSON parser mostly intended for 4chan analytical data.
-Currently extremely limited in its usage.
+Currently limited in its usage.
 
 ##Usage 
 to run:
@@ -18,3 +18,6 @@ Solution: loop through list of </a> values to get all the replies
 2. Doesn't delete tripcodes (results in encryption string)
 3. Cannot handle if you redirect to a different thread.
 4. Reformat into objects
+
+##Future Updates
+Updates will be provided to include chart.js classes for data collection. All extensive data will be hosted publically at 4chanalytics.org
