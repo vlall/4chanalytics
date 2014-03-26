@@ -80,12 +80,20 @@ for i in range (len(contentList)):
         else:
             print space + 'Reply #' + str(j) + space +(comment)
 
+<<<<<<< HEAD
 '''
 Current bugs:
+=======
+'''Current bugs:
+>>>>>>> FETCH_HEAD
 1) If theres more than one quote it doesn't get the reply. 
 ^ loop through list of </a> values to get all the reply 
 2) Doesn't delete tripcodes
 3) if you direct to a different thread, it messes up and places that as part of the reply.
 4) treat <br> as breaks---Check
+<<<<<<< HEAD
 5) Format
 '''
+=======
+5) FORMAT INTO FUNCTIONS'''
+>>>>>>> FETCH_HEAD
